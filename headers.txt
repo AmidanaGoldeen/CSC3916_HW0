@@ -1,0 +1,33 @@
+Expires -------> Mon, 02 Feb 2020 03:37:45 GMT
+  - Indicates when a response is going to expire with a time and date.
+Date  -------> Mon, 02 Feb 2020 03:37:45 GMT
+  - Contains the date and time of when a response was requested.
+Cache-Control -------> private, max-age=0, must-revalidate, no-transform
+  - Private means it was a request for one user, a personal request.
+  - Max-Age refers to when the data is brand new, not stored in cache if number is 0.
+  - Must-Revalidate means the response should be realidated, not pulled from cache if stored.
+  - No-Transform refers to no editing or transformations made to the resource, and there will not be.
+ETag  -------> iPPser6Mov75mJUb_EktR4oB1SI/Fl8Mqgg6qnsHQ0nF6hQw6aG5g44
+  - ETag is a specified identifier created to identify the resource for a response.
+Vary  -------> Origin
+  - Used to decide if the original fresh request should be used rather than a cached request.
+Vary  -------> X-Origin
+  - Add custom headers.
+Content-Type -------> application/json; charset=UTF-8
+  - The content type is formatted into the style of the response data.
+Content-Encoding ------->gzip
+  - Specifies the type of encoding that is used on the data.
+X-Content-Type-Options -------> nosniff.
+  -Prevents the internet from sniffing the request.
+X-Frame-Options -------> SAMEORIGIN
+  - Avoid clickjacking attacks by searching for content not being embedded into other sites.
+X-XSS-Proctection -------> 1; mode=block
+  - Stops pages from loading when a reflected cross-site scripting attack is detected.
+Server -------> GSE
+  - Holds info on the server and how it handles requests.
+Alt-Svc -------> quic=":443"; ma=2592000; v="46,43",h3-Q050=":443"; ma=2592000,h3-Q049=":443";
+                 ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443";
+                 ma=2592000
+  - "Alternative-Service", custom header which grabs an alternate network location.
+Transfer-Encoding -------> chunked
+  - The form of encoding that is used to transfer from the entity to the user.
